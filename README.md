@@ -1,4 +1,3 @@
-
   <h1>Experiment with marked.js</h1>
 
   <h2>Motivation</h2>
@@ -7,19 +6,20 @@
   <h2>Installation</h2>
   <p>To install <code>marked.js</code> locally, run the following command in your project:</p>
 
-  ```bash
-  npm install marked
-  ```
+```bash
+npm install marked
+```
 
   <p>You can also use it via a CDN:</p>
 
-  ```html
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js">
-  ```
+```html
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js">
+```
 
   <h2>Usage</h2>
   <p>After setting up, open <code>index.html</code> in your browser. You should see a result similar to this:</p>
-  <img src="./figs/screenshot.png" alt="Screenshot of rendered Markdown">
+  
+  <img src="https://github.com/NathanKr/marked-playground/blob/main/figs/screenshot.png?raw=true" alt="Screenshot of rendered Markdown">
 
   <h2>What is marked.js?</h2>
   <ul>
@@ -53,16 +53,18 @@
     <li>Escaping: Backslashes (<code>\</code>) can escape Markdown syntax.</li>
   </ul>
 
+  <p>You can also include raw HTML elements in Markdown files. This can be useful for adding custom styles, scripts, or any other HTML features that are not native to Markdown syntax.</p>
+
   <h2>Code Example</h2>
-  <p>Here’s a simple example using <code>marked.js</code> to convert Markdown content to HTML:</p>
+<p>Here’s a simple example using <code>marked.js</code> to convert Markdown content to HTML. Notice that the parser inserts HTML elements instead of Markdown directives, and specifically, it adds a <code>class="language-ts"</code> to the code block at the end.</p>
 
 ```javascript
 // Parse the Markdown content to HTML
 const htmlContent = marked.parse(markdown);
 
 // Insert the HTML content into the div with id "content"
-document.getElementById('content').innerHTML = htmlContent;
+document.getElementById("content").innerHTML = htmlContent;
 ```
 
   <p>The <code>marked.parse</code> function takes Markdown content and converts it to HTML, as shown below:</p>
-  <img src="./figs/resulted-html.png" alt="Resulted HTML">
+  <img src="https://github.com/NathanKr/marked-playground/blob/main/figs/resulted-html.png?raw=true" alt="Resulted HTML">
