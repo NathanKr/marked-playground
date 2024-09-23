@@ -32,7 +32,7 @@ npm install marked
 
   <h2>How I Use Markdown</h2>
   <ul>
-    <li>I convert Markdown files to HTML for posts on my personal website.</li>
+    <li>I convert Markdown files to HTML for posts on my <a href='https://nathankrasney.com/blog'>personal website</a></li>
     <li>I use it in my <strong>post2youtube</strong> project to convert <code>README.md</code> files to HTML.</li>
   </ul>
 
@@ -56,7 +56,7 @@ npm install marked
   <p>You can also include raw HTML elements in Markdown files. This can be useful for adding custom styles, scripts, or any other HTML features that are not native to Markdown syntax.</p>
 
   <h2>Code Example</h2>
-<p>Here’s a simple example using <code>marked.js</code> to convert Markdown content to HTML. Notice that the parser inserts HTML elements instead of Markdown directives, and specifically, it adds a <code>class="language-ts"</code> to the code block at the end.</p>
+<p>Here’s a simple example using <code>marked.js</code> to convert Markdown content to HTML</p>
 
 ```javascript
 // Parse the Markdown content to HTML
@@ -66,5 +66,5 @@ const htmlContent = marked.parse(markdown);
 document.getElementById("content").innerHTML = htmlContent;
 ```
 
-  <p>The <code>marked.parse</code> function takes Markdown content and converts it to HTML, as shown below:</p>
+  <p>The <code>marked.parse</code> function takes Markdown content and converts it to HTML, as shown below. Notice that the parser inserts HTML elements instead of Markdown directives, and specifically, it adds a <code>class="language-ts"</code> to the code block at the end</p>
   <img src="https://github.com/NathanKr/marked-playground/blob/main/figs/resulted-html.png?raw=true" alt="Resulted HTML">
