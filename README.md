@@ -54,10 +54,6 @@ npm install marked
   <p>You can also include raw HTML elements in Markdown files. This can be useful for adding custom styles, scripts, or any other HTML features that are not native to Markdown syntax.</p>
 
 
-  <h2>Demo - index.html</h2>
-
-  You should see a result similar to this:
-  <img src="https://github.com/NathanKr/marked-playground/blob/main/figs/screenshot.png?raw=true" alt="Screenshot of rendered Markdown">
 
   <h2>Code Example</h2>
 <p>Here’s a simple example using <code>marked.js</code> to convert Markdown content to HTML. The <code>marked.parse</code> function takes Markdown content and converts it to HTML, as shown below </p>
