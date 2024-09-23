@@ -1,54 +1,68 @@
-<h2>Motivation</h2>
-Experiment with marked.js
 
+  <h1>Experiment with marked.js</h1>
 
-<h2>Installation</h2>
-In this repo, marked.js is used with a CDN. To install it locally, use:
+  <h2>Motivation</h2>
+  <p>This project demonstrates how to use <code>marked.js</code> to convert Markdown into HTML. It's a quick and efficient solution for rendering Markdown in web projects.</p>
 
-```bash
-npm install marked
-```
-<h2>Usage</h2> 
-Open index.html in the browser and you will see the following
+  <h2>Installation</h2>
+  <p>To install <code>marked.js</code> locally, run the following command in your project:</p>
 
-<img src='./figs/screenshot.png'/>
+  ```bash
+  npm install marked
+  ```
 
-<h2>What is marked.js</h2> <ul> <li>Marked.js is a fast, low-level Markdown parser and compiler that converts Markdown to HTML.</li> <li>It supports all Markdown features and works in browsers, servers, and command-line interfaces.</li> </ul>
+  <p>You can also use it via a CDN:</p>
 
-<h2>Motivation for marked.js</h2> Built for speed and efficiency, Marked.js aims to parse Markdown without caching or blocking, ensuring lightweight, high-performance rendering across various environments.
+  ```html
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js">
+  ```
 
-<h2>Motivation for Markdown for Me</h2> 
-<ul> 
-<li>I use it to create posts from Markdown on my personal website, converting Markdown files to HTML posts.</li> 
-<li>I use it in post2youtube to convert the repo README.md to HTML.</li> 
-</ul>
+  <h2>Usage</h2>
+  <p>After setting up, open <code>index.html</code> in your browser. You should see a result similar to this:</p>
+  <img src="./figs/screenshot.png" alt="Screenshot of rendered Markdown">
 
-<h2>Key Markdown Features Supported by Marked.js</h2> 
-<ul>
- <li>Headings: #, ##, ###, etc.</li> <li>Paragraphs: Standard text blocks.</li> <li>Emphasis: italic, bold, strikethrough.</li> <li>Lists: Ordered (1. Item) and unordered (- Item).</li> 
- <li>Links: link.</li> 
- <li>Images: !alt text.</li> 
- <li>Blockquotes: > Blockquote.</li> 
- <li>Code Blocks: Indented or fenced with backticks (```).</li> 
- <li>Inline Code: `inline code`.</li> 
- <li>Tables: Using pipes (|) and dashes (-).</li> 
- <li>Horizontal Rules: —, ***, ___.</li> 
- <li>HTML: Inline HTML tags.</li> 
- <li>Escaping: Using backslashes to escape Markdown syntax.</li> 
- </ul>
+  <h2>What is marked.js?</h2>
+  <ul>
+    <li><strong>marked.js</strong> is a fast, low-level Markdown parser and compiler that converts Markdown to HTML.</li>
+    <li>It supports all standard Markdown features and can be used in browsers, servers, and CLI environments.</li>
+  </ul>
 
-Remark :  You can also use HTML elements in Markdown files.
+  <h2>Why marked.js?</h2>
+  <p>Built for speed and efficiency, marked.js parses Markdown without caching or blocking. It ensures high-performance rendering in any environment.</p>
 
-<h2>Code</h2>
+  <h2>How I Use Markdown</h2>
+  <ul>
+    <li>I convert Markdown files to HTML for posts on my personal website.</li>
+    <li>I use it in my <strong>post2youtube</strong> project to convert <code>README.md</code> files to HTML.</li>
+  </ul>
+
+  <h2>Key Markdown Features Supported by marked.js</h2>
+  <ul>
+    <li>Headings: <code>#</code>, <code>##</code>, <code>###</code>, etc.</li>
+    <li>Paragraphs: Standard text blocks.</li>
+    <li>Emphasis: <em>italic</em>, <strong>bold</strong>, <del>strikethrough</del>.</li>
+    <li>Lists: Ordered (<code>1. Item</code>) and unordered (<code>- Item</code>).</li>
+    <li>Links: <code>[Link](url)</code>.</li>
+    <li>Images: <code>![alt text](url)</code>.</li>
+    <li>Blockquotes: <code>&gt; Blockquote</code>.</li>
+    <li>Code Blocks: Indented or fenced with backticks (<code>```</code>).</li>
+    <li>Inline Code: <code>`inline code`</code>.</li>
+    <li>Tables: Using pipes (<code>|</code>) and dashes (<code>-</code>).</li>
+    <li>Horizontal Rules: <code>---</code>, <code>***</code>, <code>___</code>.</li>
+    <li>HTML: Inline HTML elements can also be included.</li>
+    <li>Escaping: Backslashes (<code>\</code>) can escape Markdown syntax.</li>
+  </ul>
+
+  <h2>Code Example</h2>
+  <p>Here’s a simple example using <code>marked.js</code> to convert Markdown content to HTML:</p>
 
 ```javascript
-        // Parse the Markdown content to HTML
-       const htmlContent = marked.parse(markdown);
+// Parse the Markdown content to HTML
+const htmlContent = marked.parse(markdown);
 
-       // Insert the HTML content into the div with id "content"
-       document.getElementById('content').innerHTML = htmlContent;
+// Insert the HTML content into the div with id "content"
+document.getElementById('content').innerHTML = htmlContent;
 ```
 
-marked.parse takes the Markdown content and creates HTML from it, as shown in this figure:
-
-<img src = './figs/resulted-html.png'>
+  <p>The <code>marked.parse</code> function takes Markdown content and converts it to HTML, as shown below:</p>
+  <img src="./figs/resulted-html.png" alt="Resulted HTML">
