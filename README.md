@@ -17,10 +17,8 @@ npm install marked
 ```
 
   <h2>Usage</h2>
-  <p>After setting up, open <code>index.html</code> in your browser. You should see a result similar to this:</p>
+  <p>After setting up, open <code>index.html</code> in your browser</p>
   
-  <img src="https://github.com/NathanKr/marked-playground/blob/main/figs/screenshot.png?raw=true" alt="Screenshot of rendered Markdown">
-
   <h2>What is marked.js?</h2>
   <ul>
     <li><strong>marked.js</strong> is a fast, low-level Markdown parser and compiler that converts Markdown to HTML.</li>
@@ -54,6 +52,12 @@ npm install marked
   </ul>
 
   <p>You can also include raw HTML elements in Markdown files. This can be useful for adding custom styles, scripts, or any other HTML features that are not native to Markdown syntax.</p>
+
+
+  <h2>Demo - index.html</h2>
+
+  You should see a result similar to this:
+  <img src="https://github.com/NathanKr/marked-playground/blob/main/figs/screenshot.png?raw=true" alt="Screenshot of rendered Markdown">
 
   <h2>Code Example</h2>
 <p>Here’s a simple example using <code>marked.js</code> to convert Markdown content to HTML. The <code>marked.parse</code> function takes Markdown content and converts it to HTML, as shown below </p>
