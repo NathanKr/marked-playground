@@ -17,7 +17,9 @@ npm install marked
 ```
 
   <h2>Usage</h2>
-  <p>After setting up, open <code>index.html</code> in your browser</p>
+  <p>After setting up, open <code>index.html</code> in your browser. You should see a result similar to this:</p>
+  
+  <img src="https://raw.githubusercontent.com/NathanKr/marked-playground/main/figs/screenshot.png" alt="Screenshot of rendered Markdown">
   
   <h2>What is marked.js?</h2>
   <ul>
@@ -67,4 +69,5 @@ document.getElementById("content").innerHTML = htmlContent;
 ```
 
   <p>Notice that the parser inserts HTML elements instead of Markdown directives, and specifically, it adds a <code>class="language-ts"</code> to the code block at the end</p>
-  <img src="https://github.com/NathanKr/marked-playground/blob/main/figs/resulted-html.png?raw=true" alt="Resulted HTML">
+  <img src="https://raw.githubusercontent.com/NathanKr/marked-playground/main/figs/resulted-html.png" alt="Resulted HTML">
+
